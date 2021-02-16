@@ -76,6 +76,7 @@ body {
   .info {
     display: flex;
     align-items: center;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .info-span {
     padding-left: 10px;
@@ -101,6 +102,7 @@ body {
     display: inline-block;
     padding-top: 32px;
     padding-bottom: 32px;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -160,6 +162,7 @@ body {
     padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .hero:hover {
     background-image:
@@ -326,6 +329,10 @@ body {
   .team-social-media-icon {
     fill: #AFB1B8;
   }
+  .team-social-media-link svg,
+  .team-social-media-link svg {
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
   .team-social-media-link:hover svg,
   .team-social-media-link:focus svg {
     fill: #FFFFFF;
@@ -348,6 +355,7 @@ body {
     border: 1px solid #AFB1B8;
     box-sizing: border-box;
     border-radius: 4px;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .company-icon {
     fill: #AFB1B8;
@@ -407,6 +415,7 @@ body {
     border-radius: 50%;
     border: none;
     background-color: rgba(255, 255, 255, 0.1);
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .social-media-icon {
     fill: #FFFFFF;
@@ -442,6 +451,7 @@ body {
     font-size: 14px;
     line-height: 1.71;
     color: rgba(255, 255, 255, 0.6);
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .footer-list li:not(:last-child) {
     margin-bottom: 9px;
@@ -457,6 +467,12 @@ body {
     padding: 6px 22px 6px 22px;
     background: #F5F4FA;
     border-radius: 4px;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .portfolio-button:hover,
+  .portfolio-button:focus {
+    background-color: var(--accent-color);
+    color: var(--primary-bg-color);
   }
   .pfl-list li:not(:last-child) {
     margin-right: 8px;
@@ -473,11 +489,7 @@ body {
     justify-content: center;
     padding-bottom: 50px;
   }
-  .portfolio-button:hover,
-  .portfolio-button:focus {
-    background-color: var(--accent-color);
-    color: var(--primary-bg-color);
-  }
+
   .description-box {
     padding: 20px 24px 20px 24px;
   }
@@ -514,6 +526,7 @@ body {
   .pfl-link {
     display: inline-block;
     text-decoration: none;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .portf-title {
     /* margin-top: 20px;
@@ -572,7 +585,6 @@ body {
   pointer-events: none;
 }
 .modal {
-  display: flex;
   position: absolute;
   top: 50%;
   left: 50%;
